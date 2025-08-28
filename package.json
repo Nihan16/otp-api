@@ -1,9 +1,21 @@
 {
   "name": "tempmail-api",
   "version": "1.0.0",
+  "description": "A temporary email API service",
   "main": "api/tempmail.js",
   "type": "module",
+  "scripts": {
+    "start": "node api/tempmail.js",
+    "dev": "node --watch api/tempmail.js"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2"
-  }
+  },
+  "keywords": [
+    "tempmail",
+    "api",
+    "email"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
