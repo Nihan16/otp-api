@@ -1,7 +1,9 @@
 {
-  "name": "tempmail-proxy",
+  "name": "tempmail-api",
   "version": "1.0.0",
+  "main": "api/tempmail.js",
+  "type": "module",
   "dependencies": {
-    "node-fetch": "3.x"
+    "node-fetch": "^3.3.2"
   }
 }
