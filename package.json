@@ -1,0 +1,19 @@
+{
+  "name": "telegram-temp-mail-bot",
+  "version": "1.0.0",
+  "description": "Telegram Temp Mail Bot for Vercel",
+  "main": "api/bot.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node api/bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "axios": "^1.6.0",
+    "otplib": "^12.0.1",
+    "cron": "^3.1.6"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
