@@ -1,6 +1,6 @@
-import fetch from "node-fetch";
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   const { email } = req.query;
 
   if (!email) {
@@ -22,4 +22,4 @@ export default async function handler(req, res) {
   } catch (err) {
     return res.status(500).json({ error: err.message });
   }
-}
+};
